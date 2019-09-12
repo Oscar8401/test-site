@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
-import { Col, Row, InputGroup, FormControl, ButtonToolbar, Button } from 'react-bootstrap';
+import { Col, Row, Button } from 'react-bootstrap';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeroBackground from './assest/images/HeroBackground.png';
@@ -24,13 +24,7 @@ function App() {
 							</Col>
 						</Row>
 						<Row className="image-over-button">
-							<Col>
-								<ButtonToolbar>
-									<Button id="button" variant="warning">
-										Learn more
-									</Button>
-								</ButtonToolbar>
-							</Col>
+							<Col><Button id="button">Learn more</Button></Col>
 						</Row>
 					</div>
 				</div>
@@ -78,12 +72,8 @@ function App() {
 				<Row>
 					{images.map((num, index) => {
 						return (
-							<Col sm={3} key={index}>
-								<img
-									src={require(`./assest/images/Image${num}.png`)}
-									className="project-img"
-									alt="project image"
-								/>
+							<Col sm={3} key={index} className="row-image">
+								<img src={require(`./assest/images/Image${num}.png`)} className="project-img" alt="project image" />
 							</Col>
 						);
 					})}
@@ -110,11 +100,7 @@ function App() {
 				</Row>
 				<Row>
 					<Col>
-						<ButtonToolbar>
-							<Button id="normal-button" variant="warning">
-								Send message
-							</Button>
-						</ButtonToolbar>
+          <Button id="normal-button">Send message</Button>
 					</Col>
 				</Row>
 			</section>

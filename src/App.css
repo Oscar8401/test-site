@@ -19,32 +19,59 @@ section{
   }
 }
 @media screen and (max-width: 375px) {
+  .small-button {
+    margin-left: 35px;
+    margin-top: -15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
   .Hero-background {
     width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
   .title {
-    font-size: 30px !important;
+    font-size: 40px !important;
   }
-  .sub-title {
-    font-size: 0.9em !important;
-    margin-bottom: 25px;
+}
+@media screen and (max-width: 375px) {
+  .section-three {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
   }
 }
 .section-Four {
   background-color: #FFAA00;
   padding: 32px 25%;
 }
+@media screen and (max-width: 375px) {
+  #normal-button {
+    position: absolute;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0rem;
+    width: 166px !important;
+    font-size: 15px !important;
+    margin-left: 2px !important;
+    margin-top: -22px !important;
+  }
+}
 #normal-button {
-  margin-left: auto;
+  margin-left: 495px;
   color: #ffffff;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 0rem;
+  width: 181px;
 }
 #button {
-  margin-left: auto;
   color: #ffffff;
   background-color: #FFAA00;
   width: 160px;
@@ -57,24 +84,21 @@ section{
   border-radius: 0rem;
 }
 .title {
-  font-size: 75px;
+  font-size: 4em;
   color: #ffffff;
   font-family: Roboto;
-  line-height: 94px;
-}
+ }
 .sub-title {
-  font-size: 2em;
+  font-size: 32px;
   color: #ffffff;
   margin-bottom: 50px;
-}
-.about-us {
-  text-align: center;
 }
 .about-us {
 	position: relative;
 	font-size: 2em;
   margin-top: 3em;
-	padding-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .about-cotact-us {
   position: relative;
@@ -119,7 +143,10 @@ section{
 .project-img {
   padding: 10px;
   width: 100%;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
+
 .Hero-background {
   width: 100%;
   height: 100%;
@@ -135,7 +162,6 @@ section{
 .image-over-button {
   position: absolute;
  }
-
 .style-one {
   display: flex;
   height: 100%;
@@ -151,7 +177,6 @@ section{
   top: 150px;
   left: 60px;
 }
-
 .input-name{
   height: 40px !important;
   border-radius: 0px !important;
@@ -165,7 +190,22 @@ section{
   font-size: 13px;
 }
 @media screen and (max-width: 375px) {
+  .input-message{
+    height: 175px !important;
+    border-radius: 0px !important;
+    margin-top: 1px;
+    margin-bottom: 43px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
   .input-name {
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form-control  {
+     width: 324px !important;
+     margin-left: -70px;
   }
 }
